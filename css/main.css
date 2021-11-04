@@ -1,0 +1,177 @@
+/**** BASE STYLES *****/
+
+* {
+	box-sizing: border-box; 
+	
+	
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+	
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --white: #ffffff;
+   }
+
+body {
+    font-size: 13px; 
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: var(--Very-Light-Gray);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+	padding:20px 0;
+}
+
+a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ p {
+     font-weight: 200;
+ }
+
+header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+h1 {
+    font-weight: 200;
+	color: var(--Very-Dark-Blue);
+}
+
+span {
+    font-weight: 600;
+}
+
+header p {
+    max-width: 85%;
+    font-size: 15px;
+	color:var(--Grayish-Blue);
+	
+}
+
+h3 {
+	
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: start;
+    max-width: 72%;
+}
+
+.box{
+	margin: 20px 0;
+	width: 100%;
+    padding: 20px 20px;
+    border-radius: 5px;
+	color: var(--white);
+	box-shadow: 1px 5px 20px 5px var(--Grayish-Blue);
+}
+
+.box h3 {
+    color: var(--Very-Dark-Blue);
+}
+
+.box p {
+    
+    color:var(--Grayish-Blue);
+}
+
+.one, .two, .three, .four {
+    height: 250px;
+    align-self: center;
+	position: relative;
+}
+
+.one{
+   
+    border-top: var(--Cyan) solid 3px;
+    
+}
+
+.two {
+    
+    border-top: var(--Red) solid 3px;
+    
+}
+
+.three {
+    
+    border-top: var(--Orange) solid 3px;
+   
+}
+
+.four {
+    
+    border-top: var(--Blue) solid 3px;
+    
+}
+
+.box .image {
+	 width: 98%;
+    height: 50%;
+    position: relative;
+}
+
+.box .image img {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+
+
+/**** DeskTop ****/
+@media only screen and (min-width: 1024px) {
+    
+    header p {
+        max-width: 60%;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+		
+    }
+	
+    .one {
+        position: absolute;
+        bottom: -120px;
+        left: -300px;
+        max-width: 72%;
+    }
+    .two{
+        position: absolute;
+        top: 10px;
+        max-width: 72%;
+    }
+    .three {
+        position: absolute;
+        bottom: -300px;
+        max-width: 72%;
+    }
+	
+    .four {
+        /* position: absolute; */
+        bottom: -120px;
+        right: -360px;
+        max-width: 72%;
+    }
+	
+	
+}

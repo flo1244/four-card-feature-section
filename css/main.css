@@ -133,6 +133,17 @@ main {
     right: 0;
 }
 
+footer {
+
+	margin: 30px 0 ;
+}
+
+.attribution {
+	font-size: 11px; text-align: center; 
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
 
 
 /**** DeskTop ****/
@@ -172,6 +183,10 @@ main {
         right: -360px;
         max-width: 72%;
     }
+	
+	footer {
+		margin-top: 300px;
+	}
 	
 	
 }
